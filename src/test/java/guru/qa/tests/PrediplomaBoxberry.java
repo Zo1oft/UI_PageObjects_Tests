@@ -1,7 +1,7 @@
 package guru.qa.tests;
 
 import guru.qa.helpers.DriverUtils;
-import guru.qa.helpers.EStorePage;
+import guru.qa.pages.EStorePage;
 import guru.qa.pages.CooperationPage;
 import guru.qa.pages.InternationalDeliveryPage;
 import guru.qa.pages.MainPage;
