@@ -23,11 +23,11 @@ public class PrediplomaBoxberry extends TestBase {
            mainPage.openPage();
         });
 
-        step("Перейти на страницу расчета международной доставки", () -> {
+        step("Переходим на страницу расчета международной доставки", () -> {
             mainPage.internationalDeliveryTransfer();
         });
 
-        step("Убедиться, что мы на верной странице", () -> {
+        step("Проверяем, что мы на верной странице", () -> {
             intPage.internationalDeliveryPageCheck();
         });
     }
@@ -40,19 +40,19 @@ public class PrediplomaBoxberry extends TestBase {
             mainPage.openPage();
         });
 
-        step("Перейти на страницу сотрудничества", () -> {
+        step("Переходим на страницу сотрудничества", () -> {
             mainPage.cooperationTransfer();
         });
 
-        step("Убедиться, что мы на верной странице", () -> {
+        step("Проверяем, что мы на верной странице", () -> {
             coopPage.coopPageTitleCheck();
         });
 
-        step("Перейти на форму заполнения заявки", () -> {
+        step("Переходим на форму заполнения заявки", () -> {
             coopPage.applicationStart();
         });
 
-        step("Убедиться, что мы на верной странице", () -> {
+        step("Проверяем, что мы на верной странице", () -> {
             coopPage.applicationFormCheck();
         });
     }
@@ -65,15 +65,15 @@ public class PrediplomaBoxberry extends TestBase {
             mainPage.openPage();
         });
 
-        step("Перейти на экран рассчета заказа", () -> {
+        step("Переходим на экран рассчета заказа", () -> {
             mainPage.itemCalculatorTransfer();
         });
 
-        step("Убедиться, что мы на верной странице", () -> {
+        step("Проверяем, что мы на верной странице", () -> {
             mainPage.itemCalculatorScreenCheck();
         });
 
-        step("Убедиться, что мы на верном экране", () -> {
+        step("Проверяем, что мы на верном экране", () -> {
             mainPage.itemCalculatorCheck();
         });
 
@@ -81,7 +81,7 @@ public class PrediplomaBoxberry extends TestBase {
             mainPage.internetStoreTransfer();
         });
 
-        step("Убедиться, что мы на верной странице", () -> {
+        step("Проверяем, что мы на верной странице", () -> {
             eStorePage.eStorePageCheck();
         });
     }
