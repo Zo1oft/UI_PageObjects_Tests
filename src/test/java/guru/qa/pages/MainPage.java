@@ -8,8 +8,8 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage {
+    
     //locators
-
     SelenideElement
             itemCalculator = $$("#item-calculator").findBy(Condition.text("Рассчитать")),
             itemCalculatorTitle = $("div.calculator__title"),
