@@ -15,8 +15,7 @@ public class CooperationPage {
     //action
 
     public void coopPageTitleCheck() {
-        cooperationTitle.shouldHave(Condition.text("Откройте пункт выдачи\n" +
-                "заказов в своем городе"));
+        cooperationTitle.shouldHave(Condition.text("Откройте пункт выдачи заказов в своем городе"));
     }
 
     public void applicationStart() {
@@ -24,7 +23,7 @@ public class CooperationPage {
     }
 
     public void applicationFormCheck() {
-        applicationFormStart.shouldHave(Condition.text(" Заявка на открытие пункта выдачи Boxberry "));
+        applicationFormStart.shouldHave(Condition.text("Заявка на открытие пункта выдачи Boxberry"));
     }
 
 }

@@ -3,7 +3,6 @@ package guru.qa.pages;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -17,48 +16,43 @@ public class MainPage {
             internetStoreCalculator = $(byName("calculator_pip")),
             internetStoreCalculatorButton = $(".nav__item"),
             partershipDeliveryButton = $(byText("Бизнес-партнерам")),
-            acceptingcookies =  $(".cookie-info__btn"),
+            acceptingcookies = $(".cookie-info__btn"),
             internationalDeliveryNavigationButton = $(byText("International delivery"));
 
     //actions
-public MainPage openPage() {
-    open("https://boxberry.ru/");
-    return this;
-}
+    public MainPage openPage() {
+        open("https://boxberry.ru/");
+        return this;
+    }
 
-public void cooperationTransfer() {
-    partershipDeliveryButton.click();
+    public void cooperationTransfer() {
+        partershipDeliveryButton.click();
 
-}
+    }
 
-public void itemCalculatorTransfer() {
-    itemCalculator.click();
+    public void itemCalculatorTransfer() {
+        itemCalculator.click();
 
-}
+    }
 
-public void itemCalculatorScreenCheck() {
-    itemCalculatorTitle.shouldHave(Condition.text("Калькулятор расчета доставки"));
+    public void itemCalculatorScreenCheck() {
+        itemCalculatorTitle.shouldHave(Condition.text("Калькулятор расчета доставки"));
 
-}
+    }
 
-public void itemCalculatorCheck() {
-    internetStoreCalculator.shouldHave(Condition.text("Интернет-магазинам"));
+    public void itemCalculatorCheck() {
+        internetStoreCalculator.shouldHave(Condition.text("Интернет-магазинам"));
 
-}
+    }
 
-public void internetStoreTransfer() {
-    internetStoreCalculatorButton.click();
+    public void internetStoreTransfer() {
+        internetStoreCalculatorButton.click();
 
-}
+    }
 
-public void internationalDeliveryTransfer() {
-    internationalDeliveryNavigationButton.click();
+    public void internationalDeliveryTransfer() {
+        internationalDeliveryNavigationButton.click();
 
-}
-
-public void acceptCookies() {
-    acceptingcookies.click();
-
-}
+    }
 
 }

@@ -13,7 +13,6 @@ public class EStorePage {
     //action
 
     public void eStorePageCheck() {
-        eStoreCalculator.shouldHave(Condition.text("Расчёт и отправка посылок" +
-                " для интернет-магазинов"));;
+        eStoreCalculator.shouldHave(Condition.text("Расчёт и отправка посылок для интернет-магазинов"));
     }
 }

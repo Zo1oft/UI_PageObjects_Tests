@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class InternationalDeliveryPage {
     //locator
     SelenideElement
-        sliderName = $(".slider__itemInfo");
+            sliderName = $(".slider__itemInfo");
 
     //action
 

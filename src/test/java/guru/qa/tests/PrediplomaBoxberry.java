@@ -15,11 +15,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 public class PrediplomaBoxberry extends TestBase {
-    MainPage mainPage = new MainPage();
-    InternationalDeliveryPage intPage = new InternationalDeliveryPage();
-    CooperationPage coopPage = new CooperationPage();
-    EStorePage eStorePage = new EStorePage();
-
     @Test
     @Description("Проверка работы страницы Международной доставки")
     @DisplayName("Расчет международной доставки")
