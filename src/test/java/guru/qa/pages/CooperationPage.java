@@ -6,8 +6,8 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$;
 
 public class CooperationPage {
-    //locator
-
+    
+    //locators
     SelenideElement
             cooperationTitle = $("div.slider"),
             applicationButton = $(".cta__button"),
