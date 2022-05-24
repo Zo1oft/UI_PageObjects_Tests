@@ -7,11 +7,11 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class InternationalDeliveryPage {
     //locator
+
     SelenideElement
             sliderName = $(".slider__itemInfo");
 
     //action
-
     public void internationalDeliveryPageCheck() {
         sliderName.shouldHave(Condition.text("International delivery"));
     }

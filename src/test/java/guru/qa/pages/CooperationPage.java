@@ -7,13 +7,13 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class CooperationPage {
     //locator
+
     SelenideElement
             cooperationTitle = $("div.slider"),
             applicationButton = $(".cta__button"),
             applicationFormStart = $(".form__title");
 
-    //action
-
+    //actions
     public void coopPageTitleCheck() {
         cooperationTitle.shouldHave(Condition.text("Откройте пункт выдачи заказов в своем городе"));
     }

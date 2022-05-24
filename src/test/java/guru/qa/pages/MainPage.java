@@ -8,15 +8,14 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage {
-
     //locators
+
     SelenideElement
             itemCalculator = $$("#item-calculator").findBy(Condition.text("Рассчитать")),
             itemCalculatorTitle = $("div.calculator__title"),
             internetStoreCalculator = $(byName("calculator_pip")),
             internetStoreCalculatorButton = $(".nav__item"),
             partershipDeliveryButton = $(byText("Бизнес-партнерам")),
-            acceptingcookies = $(".cookie-info__btn"),
             internationalDeliveryNavigationButton = $(byText("International delivery"));
 
     //actions
