@@ -6,8 +6,8 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.$;
 
 public class EStorePage {
+    
     //locator
-
     SelenideElement
             eStoreCalculator = $("#calculator");
 
